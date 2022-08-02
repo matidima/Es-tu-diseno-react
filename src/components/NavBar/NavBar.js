@@ -1,10 +1,10 @@
 import './NavBar.css';
-import img from "../img/logo.jpeg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import CartWidget from './CartWidget';
+import img from "../../img/logo.jpeg"
 
 function NavBar() {
     return(
+        <>
         <header>
             <nav>
                 <div className="logo">
@@ -16,11 +16,12 @@ function NavBar() {
                         <li>Inicio</li>
                         <li>Iniciar Sesión</li>
                         <li>Nosotros</li>
-                        <li><FontAwesomeIcon icon={faCartShopping}/></li>
+                        <li><CartWidget/></li>
                     </ul>
                 </div>
             </nav>
         </header>
+        </>
     )
 }
 
