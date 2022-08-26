@@ -11,6 +11,7 @@ function ItemList ({data}) {
                         return (
                             <Item
                                     key={producto.id}
+                                    id={producto.id}
                                     img={producto.img}
                                     nombre={producto.nombre}
                                     precio={producto.precio}

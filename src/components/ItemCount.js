@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import '../App.css';
 
 function ItemCount(props) {
     
-    const [clicks, setClicks] = React.useState(1);
+    const [clicks, setClicks] = useState(1);
     
     const handleIncrement= () => {
         if (clicks < props.stock) {
@@ -21,20 +21,15 @@ function ItemCount(props) {
         }
     }
 
-    const onAdd = () => {
-        alert("Añadido al carrito")
-    }
-
     return(
         <>
             <div className="ItemCount">
-                <h3>Producto</h3>
                 <div className="clicks">
                     <button onClick={ handleDecrement }> - </button> 
                     <h3> {clicks}</h3>
                     <button onClick={ handleIncrement }> + </button>
                 </div>
-                <button className="comprar" onClick={onAdd}> Comprar </button>
+                <button className="comprar" onClick={props.onAdd(clicks)}> Añadir al carrito </button>
             </div>
         </>
     )

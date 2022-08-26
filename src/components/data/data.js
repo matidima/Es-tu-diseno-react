@@ -1,58 +1,75 @@
+import relievegrande from "../../img/relievegrande.jpeg";
+import tachaschica from "../../img/tachaschica.jpeg";
+import zigzaggrande from "../../img/zigzaggrande.jpeg";
+import yogav1 from "../../img/yogav1.jpeg";
+import soportecelular from "../../img/soportecelular.jpeg";
+import yoda from "../../img/yoda.jpeg";
+import caraabstracta from "../../img/caraabstracta.jpeg";
+import macetafrida from "../../img/macetafrida.jpeg";
+
 const productos = [
     {
-      "id": "001",
+      "id": "1",
+      "category": "macetas",
       "nombre": "Relieve Grande",
       "precio": 1100,
-      "img": "../../img/relievegrande.jpeg",
+      "img": relievegrande,
       "desc": ""
     },
     {
-      "id": "002",
+      "id": "2",
+      "category": "macetas",
       "nombre": "Tachas Chica",
       "precio": 670,
-      "img": "../../img/tachaschica.jpeg",
+      "img": tachaschica,
       "desc": ""
     },
     {
-      "id": "003",
+      "id": "3",
+      "category": "macetas",
       "nombre": "Zig Zag Grande",
       "precio": 1655,
-      "img": "../../img/zigzaggrande.jpeg",
+      "img": zigzaggrande,
       "desc": ""
     },
     {
-      "id": "004",
+      "id": "4",
+      "category": "macetas",
       "nombre": "Yoga V1",
       "precio": 430,
-      "img": "../../img/yogav1.jpeg",
+      "img": yogav1,
       "desc": ""
     },
     {
-      "id": "005",
+      "id": "5",
+      "category": "decoracion",
       "nombre": "Soporte Celular",
       "precio": 525,
-      "img": "../../img/soportecelular.jpeg",
+      "img": soportecelular,
       "desc": ""
     },
     {
-      "id": "006",
+      "id": "6",
+      "category": "personajes",
       "nombre": "Yoda",
       "precio": 550,
-      "img": "../../img/yoda.jpeg",
+      "img": yoda,
       "desc": ""
     },
     {
-      "id": "007",
+      "id": "7",
+      "category": "macetas",
       "nombre": "Cara Abastracta",
       "precio": 495,
-      "img": "../../img/caraabstracta.jpeg",
+      "img": caraabstracta,
       "desc": ""
     },
     {
-      "id": "008",
+      "id": "8",
+      "category": "macetas",
       "nombre": "Maceta Frida",
       "precio": 680,
-      "img": "../../img/macetafrida.jpeg",
+      "img": macetafrida,
       "desc": ""
     }
   ]

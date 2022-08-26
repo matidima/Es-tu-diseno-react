@@ -1,30 +1,37 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import '../App.css';
 import productos from "./data/data";
 import ItemDetail from "./ItemDetail";
+import {useParams} from "react-router-dom"
 
-function getProducto() {
-    return new Promise( (resolve) => {
-        setTimeout( () => resolve(productos[0]), 3000)
-    })
-};  
 
-function ItemDetailContainer(props) {
-    const [data, setData] = React.useState([]);
+function ItemDetailContainer() {
+    const [item, setItem] = useState([]);
+    const {id} = useParams();
+    
+    function getProducto() {
+        return new Promise( (resolve) => {
+           resolve(productos)
+        })
+    };  
 
-    React.useEffect(() => {
+    useEffect(()=> {
         getProducto().then((respuesta) => {
-            setData(respuesta);
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    }, []);
+            let itemEncontrado = respuesta.find ((element)=> element.id === id);
+            console.log(itemEncontrado)
+            if(id === undefined) {
+                setItem(respuesta); 
+            } else {
+                setItem(itemEncontrado);
+                
+            }
+    });
+    }, [id]);
 
     return(
         <>
-        <h2 className='ItemListCont'>{props.greeting}</h2>
-        <ItemDetail img={data.img} nombre={data.nombre} precio={data.precio}/>
+        <h2 className='ItemListCont'>Item Detail Container</h2>
+        <ItemDetail img={item.img} nombre={item.nombre} precio={item.precio}/>
         </>
     )
 }
