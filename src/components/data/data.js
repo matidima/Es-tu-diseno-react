@@ -14,6 +14,7 @@ const productos = [
       "nombre": "Relieve Grande",
       "precio": 1100,
       "img": relievegrande,
+      "stock": 8,
       "desc": ""
     },
     {
@@ -22,6 +23,7 @@ const productos = [
       "nombre": "Tachas Chica",
       "precio": 670,
       "img": tachaschica,
+      "stock": 12,
       "desc": ""
     },
     {
@@ -30,6 +32,7 @@ const productos = [
       "nombre": "Zig Zag Grande",
       "precio": 1655,
       "img": zigzaggrande,
+      "stock": 4,
       "desc": ""
     },
     {
@@ -38,6 +41,7 @@ const productos = [
       "nombre": "Yoga V1",
       "precio": 430,
       "img": yogav1,
+      "stock": 10,
       "desc": ""
     },
     {
@@ -46,6 +50,7 @@ const productos = [
       "nombre": "Soporte Celular",
       "precio": 525,
       "img": soportecelular,
+      "stock": 5,
       "desc": ""
     },
     {
@@ -54,6 +59,7 @@ const productos = [
       "nombre": "Yoda",
       "precio": 550,
       "img": yoda,
+      "stock": 10,
       "desc": ""
     },
     {
@@ -62,6 +68,7 @@ const productos = [
       "nombre": "Cara Abastracta",
       "precio": 495,
       "img": caraabstracta,
+      "stock": 4,
       "desc": ""
     },
     {
@@ -70,6 +77,7 @@ const productos = [
       "nombre": "Maceta Frida",
       "precio": 680,
       "img": macetafrida,
+      "stock": 4,
       "desc": ""
     }
   ]

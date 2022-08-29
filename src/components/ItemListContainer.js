@@ -6,7 +6,7 @@ import {useParams} from "react-router-dom";
 
 function getProductos() {
     return new Promise( (resolve) => {
-        setTimeout( () => resolve(productos), 3000)
+        setTimeout( () => resolve(productos), /* 3000 */)
     })
 };
 

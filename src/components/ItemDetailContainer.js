@@ -18,7 +18,6 @@ function ItemDetailContainer() {
     useEffect(()=> {
         getProducto().then((respuesta) => {
             let itemEncontrado = respuesta.find ((element)=> element.id === id);
-            console.log(itemEncontrado)
             if(id === undefined) {
                 setItem(respuesta); 
             } else {
@@ -31,7 +30,7 @@ function ItemDetailContainer() {
     return(
         <>
         <h2 className='ItemListCont'>Item Detail Container</h2>
-        <ItemDetail img={item.img} nombre={item.nombre} precio={item.precio}/>
+        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} img={item.img} stock={item.stock}/>
         </>
     )
 }
