@@ -24,8 +24,6 @@ export function CartProvider({children}) {
             })
             setCart(cartUpdate)
         }
-       console.log(copyCart)
-       console.log(cart)
     }
 
     function isInCart (id){
@@ -33,22 +31,18 @@ export function CartProvider({children}) {
     }
 
     function removeItem (item) {
-        const itemRemove = findItem(item.id);
-        const indexItem = copyCart.indexOf(itemRemove);
-        copyCart.splice(indexItem, 1);
-        setCart(copyCart);
-        console.log(copyCart);
-        console.log(cart);
+        const itemRemove = findItem(item.id)
+        copyCart.splice(itemRemove, 1)
+        setCart(copyCart)
     }
 
     function clearCart() {
         setCart([])
-        console.log(copyCart)
-        console.log(cart)
     }
 
     function findItem(id){
-        return (copyCart.find(item => item.id === parseInt(id)))
+        return copyCart.findIndex(item => item.id === Number(id))
+        
     }
     
     return (

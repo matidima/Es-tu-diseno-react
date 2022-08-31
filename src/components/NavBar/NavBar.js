@@ -15,9 +15,9 @@ function NavBar() {
                 <div className="seccionesContainer"> 
                     <div className="secciones">
                         <Link to={`/`}>Inicio</Link>
-                        <Link to={`/category/cuenta`}>Iniciar Sesión</Link>
-                        <Link to={`/category/nosotros`}>Nosotros</Link>
-                        <Link to={`/category/carrito`}><CartWidget/></Link>
+                        <Link to={`/cuenta`}>Iniciar Sesión</Link>
+                        <Link to={`/nosotros`}>Nosotros</Link>
+                        <Link to={`/carrito`}><CartWidget/></Link>
                     </div>
                 </div>
             </nav>
