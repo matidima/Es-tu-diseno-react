@@ -25,6 +25,6 @@
   margin: auto;
 }
 
-.productoIndex img {
+.productoIndex img, .productoIndexDetail img, .cartProduct img {
   width: 200px;
 }

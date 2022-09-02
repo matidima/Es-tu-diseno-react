@@ -5,7 +5,7 @@ function ItemList ({data}) {
     return (
         <section>
             <>
-                <h2>ItemListContainer</h2>
+                <h2>Productos</h2>
                 <article>
                     {data.map((producto) => {
                         return (
