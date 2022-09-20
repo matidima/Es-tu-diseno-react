@@ -3,6 +3,9 @@ import "../App.css";
 import ItemCount from "./ItemCount";
 import { useContext } from "react";
 import { cartContext }  from "../store/cartContext";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function ItemDetail ({id, nombre, precio, img, stock}) {
     const { addItem } = useContext(cartContext);
@@ -10,6 +13,15 @@ function ItemDetail ({id, nombre, precio, img, stock}) {
     function terminarCompra (quantity) {
         const itemToCart = {id, nombre, precio, img, stock}
         addItem(itemToCart, quantity);
+        toast.success('El producto se agrego al carrito', {
+            position: "bottom-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: 0,
+            });
     }
     
     return (
@@ -24,6 +36,7 @@ function ItemDetail ({id, nombre, precio, img, stock}) {
             <button className="btn btn-success btnAgregar">Terminar compra</button>
         </Link>
     </div>
+    <ToastContainer/>
     </>
     )
 }

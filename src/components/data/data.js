@@ -1,4 +1,4 @@
-import relievegrande from "../../img/relievegrande.jpeg";
+/* import relievegrande from "../../img/relievegrande.jpeg";
 import tachaschica from "../../img/tachaschica.jpeg";
 import zigzaggrande from "../../img/zigzaggrande.jpeg";
 import yogav1 from "../../img/yogav1.jpeg";
@@ -9,7 +9,6 @@ import macetafrida from "../../img/macetafrida.jpeg";
 
 const productos = [
     {
-      "id": "1",
       "category": "macetas",
       "nombre": "Relieve Grande",
       "precio": 1100,
@@ -18,7 +17,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "2",
       "category": "macetas",
       "nombre": "Tachas Chica",
       "precio": 670,
@@ -27,7 +25,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "3",
       "category": "macetas",
       "nombre": "Zig Zag Grande",
       "precio": 1655,
@@ -36,7 +33,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "4",
       "category": "macetas",
       "nombre": "Yoga V1",
       "precio": 430,
@@ -45,7 +41,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "5",
       "category": "decoracion",
       "nombre": "Soporte Celular",
       "precio": 525,
@@ -54,7 +49,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "6",
       "category": "personajes",
       "nombre": "Yoda",
       "precio": 550,
@@ -63,7 +57,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "7",
       "category": "macetas",
       "nombre": "Cara Abastracta",
       "precio": 495,
@@ -72,7 +65,6 @@ const productos = [
       "desc": ""
     },
     {
-      "id": "8",
       "category": "macetas",
       "nombre": "Maceta Frida",
       "precio": 680,
@@ -82,4 +74,4 @@ const productos = [
     }
   ]
 
-export default productos;
+export default productos; */

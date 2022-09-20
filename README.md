@@ -1,3 +1,10 @@
+# E-commerce de productos impresos en 3D
+
+Aplicacion desarrollada para el curso de React de CoderHouse sobre un emprendimiento de productos en 3D.
+
+Este proyecto fue creado por Matias Di Mascio
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

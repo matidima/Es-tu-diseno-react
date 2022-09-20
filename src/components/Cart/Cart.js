@@ -2,14 +2,15 @@ import React, { useContext } from "react";
 import { cartContext }  from "../../store/cartContext";
 import { Link } from "react-router-dom";
 import ItemCart from "./ItemCart";
+import UserForm from './UserForm';
 
 function Cart() {
     const { cart, clearCart, removeItem } = useContext(cartContext);
-    console.log(cart);
 
     function removeItemCart(id){
         removeItem(id)
     }
+
     if (cart.length === 0) {
         return (
             <>
@@ -43,7 +44,13 @@ function Cart() {
                     })}
                     <button  className="delete-all" onClick={clearCart}> Vaciar Carrito </button>
                 </div>
+                <div className='cards'>
+                    <div className='div-cards'>
+                    <UserForm cart={cart}/>
+                    </div>
+                </div>
             </div>
+            
         )
     }
 }
