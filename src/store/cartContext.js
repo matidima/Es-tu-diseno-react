@@ -10,7 +10,6 @@ export function CartProvider({children}) {
         if(!isInCart(item.id)){
             copyCart.push( {...item, quantity} );
             setCart(copyCart);
-            console.log(item)
         } else {
             let cartUpdate = cart.map((prod) => {
                 if(prod.id === item.id){

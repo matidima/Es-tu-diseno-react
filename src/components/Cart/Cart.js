@@ -38,17 +38,13 @@ function Cart() {
                             nombre={item.nombre}
                             precio={item.precio}
                             cantidad={item.quantity}
-                            removeItemCart= {removeItemCart}
+                            removeItemCart= {() => removeItemCart(item.id)}
                             />
                         )
                     })}
                     <button  className="delete-all" onClick={clearCart}> Vaciar Carrito </button>
                 </div>
-                <div className='cards'>
-                    <div className='div-cards'>
-                    <UserForm cart={cart}/>
-                    </div>
-                </div>
+                <UserForm/>
             </div>
             
         )
